@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class Time{
+  public static void main(String[] args) {
+
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Enter the Distance ");
+   float Distance = input.nextFloat();
+
+    System.out.print("Enter the Speed ");
+    float Speed= input.nextfloat();
+
+      FindTime obj= new FindTimet();
+     obj.FindTime();
+}
+
+   public void FindTime()
+{
+
+   float time = (Distance / Speed );
+
+    System.out.println("Time is: " + time);
+}
+    
+
+
+ 
+}
