@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class Interest {
+  public static void main(String[] args) {
+
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Enter the principal: ");
+    double principal = input.nextDouble();
+
+    System.out.print("Enter the rate: ");
+    double rate = input.nextDouble();
+
+    System.out.print("Enter the time: ");
+    double time = input.nextDouble();
+
+    Interest obj = new Interest();
+   obj.SI();
+}
+
+  public void SI()
+{
+    double interest = (principal * time * rate) / 100;
+
+    System.out.println("Simple Interest: " + interest);
+}
+
+}
